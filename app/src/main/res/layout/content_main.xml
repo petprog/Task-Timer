@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:baselineAligned="false">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.android.petprog.tasktimer.fragment.MainActivityFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_main" />
+
+    <FrameLayout
+        android:id="@+id/taskFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:visibility="visible"/>
+
+<!--        <fragment-->
+<!--            android:id="@+id/addEditFragment"-->
+<!--            android:name="com.android.petprog.tasktimer.fragment.AddEditFragment"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            tools:layout="@layout/fragment_add_edit" />-->
+
+
+</LinearLayout>
